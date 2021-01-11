@@ -26,7 +26,8 @@
             font-family: fantasy;
         }
         body {
-            background-image: url('space.jpg');
+            background: url('space.jpg') fixed;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
 
         }
 
@@ -44,10 +45,29 @@
   width: 10%;
 }
 
+.left2 {
+    display: block;
+  margin-left: auto;
+  margin-right: right;
+  width: 20%;
+}
+.right {
+    display: block;
+  margin-left: right;
+  margin-right: auto;
+  width: 10%;  
+}
+
 .centerButton {
     display: block;
   margin-left: auto;
   margin-right: auto;
+}
+
+#giphy {
+    position:absolute;
+    top: 200px;
+    right:20px;
 }
         
     </style>
@@ -60,8 +80,11 @@
         <p id="nora">أُحبك نورة</p>
     <h2>Riad DRAOUI</h2>
 
-    <img src="ovni.png" alt="ovni" class="left">
-    <img src="rocket.png" alt="Rocket" class="center">
+    <img src="giphy.gif" alt="ovni" id="giphy"> 
+
+    <img src="ovni.png" alt="ovni" class="right" id="ovni">
+    
+    <img src="rocket.png" alt="Rocket" class="center" id="rocket">
 
     <button id="button1" class="centerButton" onclick="alert('أهلا بك حبوبتي نورة الغالية على موقعي')">Click her</button>
     
